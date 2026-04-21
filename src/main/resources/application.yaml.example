@@ -3,9 +3,9 @@ spring:
     name: api
 
   datasource:
-    url: jdbc:postgresql://ep-curly-sunset-aei9cskg.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require
-    username: neondb_owner
-    password: npg_5Tn3JRdphbtS
+    url: jdbc:postgresql://YOUR_NEON_HOST/neondb?sslmode=require
+    username: YOUR_DB_USERNAME
+    password: YOUR_DB_PASSWORD
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -20,5 +20,5 @@ server:
   port: 8080
 
 jwt:
-  secret: tipealo-super-secret-key-para-jwt-minimo-32-chars
+  secret: YOUR_SECRET_KEY_MIN_32_CHARS
   expiration: 86400000
